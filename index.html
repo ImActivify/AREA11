@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- ✅ FIXED: was DOCKTYPE -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- ✅ FIXED: was IE-edge -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- ✅ FIXED: was viewpoint -->
+    <title>CLASS 11 UNOFFICIAL AREA</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <!-- ✅ SIDEBAR -->
+    <div class="sidebar">
+        <div class="logo-content">
+            <div class="logo">
+                <i class='bx bx-menu' id="btn"></i> <!-- Menu icon (toggle) -->
+                <i class='bx bxs-graduation'></i>
+                <h3>AREA11</h3>
+            </div>
+        </div>
+
+<ul class="list">
+    <li class="search">
+        <a href="#">
+            <i class='bx bx-search-alt'></i>
+            <input type="text" placeholder="Search...">
+        </a>
+    </li>
+
+    <li>
+        <a href="modern-english.html"> <!-- replace with your actual file -->
+            <i class='bx bxs-book'></i>
+            <span class="link-name">MODERN English</span>
+        </a>
+    </li>
+    <li>
+        <a href="english-language.html">
+            <i class='bx bxs-pen'></i>
+            <span class="link-name">English Language</span>
+        </a>
+    </li>
+    <li>
+        <a href="physics.html">
+            <i class='bx bx-atom'></i>
+            <span class="link-name">Physics</span>
+        </a>
+    </li>
+    <li>
+        <a href="chemistry.html">
+            <i class='bx bxs-flask'></i>
+            <span class="link-name">Chemistry</span>
+        </a>
+    </li>
+    <li>
+        <a href="computer.html">
+            <i class='bx bx-laptop'></i>
+            <span class="link-name">Computer</span>
+        </a>
+    </li>
+    <li>
+        <a href="maths.html">
+            <i class='bx bx-math'></i>
+            <span class="link-name">Maths</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="read-me.html">
+            <i class='bx bxs-skull'></i>
+            <span class="link-name">READ ME</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="coming-soon.html">
+            <i class='bx bxs-skull'></i>
+            <span class="link-name">I'll add this later</span>
+        </a>
+    </li>
+</ul>
+
+
+    </div>
+
+    <!-- ✅ JavaScript for sidebar toggle -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.querySelector(".sidebar");
+            const btn = document.querySelector("#btn");
+
+            btn.addEventListener("click", () => {
+                sidebar.classList.toggle("active");
+            });
+        });
+    </script>
+
+
+
+</body>
+</html>
